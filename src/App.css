@@ -1,7 +1,6 @@
 body, html {
   padding: 10px;
   font-family: Arial;
-  font-size: 12px;
   color: #333;
   font-size: 16px;
 }
@@ -20,4 +19,64 @@ body, html {
 .error {
   color: tomato;
   padding: 10px 0;
+}
+
+.browser {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.browser-kittySearch {
+  display: flex;
+  flex-direction: column;
+}
+
+.browser-kittySearch-buttonContainer {
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.browser-kittySearch-inputContainer {
+  margin: 10px;
+}
+
+.browser-kittySearch-buttonContainer-button {
+  padding: 10px;
+  display: inline-flex;
+  justify-content: center;
+  border: 1px solid grey;
+  color: var(--color-text);
+  box-shadow: 0 .2rem 0 0 var(--color-shadow);
+  border: 2px solid var(--color-shadow);
+  background: var(--color-main);
+  border-radius: 0.5rem;
+  margin: 10px;
+}
+
+.browser-kittySearch-buttonContainer-button:hover {
+  transform: translateY(-0.2rem);
+}
+
+.browser-kittySearch-buttonContainer-find {
+  --color-main: #ef52d1;
+  --color-shadow: #c23da8;
+  --color-text: #fff;
+}
+
+.browser-kittySearch-buttonContainer-random {
+  --color-main: green;
+  --color-shadow: darkgreen;
+  --color-text: #fff;
+}
+.browser-kittyrenderer {
+  display: flex;
+  flex-direction: column;
+}
+
+.browser-kittyrenderer-image {
+  align-self: center;
+  width: 20vw;
+  height: 20vw;
 }

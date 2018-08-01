@@ -1,5 +1,41 @@
+/* RESETS */
+
 body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+}
+
+button {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+
+  background: transparent;
+
+  /* inherit font & color from ancestor */
+  color: inherit;
+  font: inherit;
+
+  /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
+  line-height: normal;
+}
+
+input {
+  border: 1px solid #e7e6e4;
+  margin: 10px;
+  padding: 0.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: .5rem;
+  outline: none;
+  box-shadow: none;
+  -webkit-appearance: none;
+}
+
+label {
+  font-size: 1.5em;
+  font-weight: 500;
 }

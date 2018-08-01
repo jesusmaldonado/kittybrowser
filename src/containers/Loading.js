@@ -1,5 +1,6 @@
 import React, { Component, Children } from 'react';
 import { drizzleConnect } from 'drizzle-react';
+import LoadingSpinner from '../components/LoadingSpinner';
 
 class Loading extends Component {
   constructor(props, context) {
@@ -24,10 +25,7 @@ class Loading extends Component {
 
     return(
       // Display a loading indicator.
-      <div className="loading">
-        <h1>Loading dapp...</h1>
-        <img src="https://www.cryptokitties.co/images/loader.gif" width="120" alt="loading" />
-      </div>
+      <LoadingSpinner loadingText={'Loading dApp...'}/>
     );
   }
 };
